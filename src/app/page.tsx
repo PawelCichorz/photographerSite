@@ -1,5 +1,15 @@
 import React from 'react';
+import Navbar from './Components/Navbar';
+import ImageCarousel from './Components/ImageCarousel';
+import SocialIcons from './Components/SocialIcons';
+import About from './Components/About';
 
 export default function Home() {
-  return <h2 className="text-red-500">Hello!</h2>;
+  return (
+    <>
+      <Navbar /> <ImageCarousel />
+      <SocialIcons />
+      <About />
+    </>
+  );
 }

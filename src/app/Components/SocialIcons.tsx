@@ -4,9 +4,9 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const SocialIcons: React.FC = () => {
   return (
-    <div className="fixed right-5 top-24 bg-amber-700/40 rounded-lg shadow-lg p-3 z-50 border-gray-200">
+    <div className="fixed right-5 top-24 bg-blue-800/90 rounded-lg shadow-lg p-3 z-50 ">
       <a
-        href="https://www.facebook.com/"
+        href="https://www.facebook.com/klaudia.wiechec.10"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Facebook"

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-
+import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
 import { EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade'; // Załaduj styl dla efektu fade
@@ -13,30 +13,30 @@ import one from '../../../assets/imgMain/one.jpg';
 import two from '../../../assets/imgMain/two.jpg';
 import three from '../../../assets/imgMain/three.jpg';
 import four from '../../../assets/imgMain/four.jpg';
-import five from '../../../assets/imgMain/small/DSC00691.jpg';
-import six from '../../../assets/imgMain/small/DSC09219.jpg';
-import seven from '../../../assets/imgMain/small/DSC09443.jpg';
-import eight from '../../../assets/imgMain/small/eight.png';
+import five from '../../../assets/imgMain/five.jpg';
+import fives from '../../../assets/imgMain/small/fives.jpg';
+import sixs from '../../../assets/imgMain/small/sixs.jpg';
+import sevens from '../../../assets/imgMain/small/sevens.jpg';
+import eights from '../../../assets/imgMain/small/eights.jpg';
+import nines from '../../../assets/imgMain/small/nines.jpg';
+import logo from '../../../assets/logo.png';
 
-const image: StaticImageData[] = [one, two, three, four];
+const image: StaticImageData[] = [one, two, three, four, five];
 
-const smallImage: StaticImageData[] = [five, six, seven, eight];
+const smallImage: StaticImageData[] = [fives, sixs, sevens, eights, nines];
 
 const ImageCarousel: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Check if screen width is less than 768px
+      setIsMobile(window.innerWidth < 768);
     };
 
-    // Add event listener for window resize
     window.addEventListener('resize', handleResize);
 
-    // Initial check
     handleResize();
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -45,7 +45,14 @@ const ImageCarousel: React.FC = () => {
   const selectedImages = isMobile ? smallImage : image;
 
   return (
-    <div className="h-screen relative">
+    <div className="h-screen relative ">
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10 pointer-events-none "></div>
+
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-10 border-4 border-white opacity-60 z-10 text-white lg:block hidden">
+        {' '}
+        <Image src={logo} alt="logo" width={300} priority />
+      </div>
+
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
@@ -55,7 +62,6 @@ const ImageCarousel: React.FC = () => {
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-          // reverseDirection: false, // Dodaj tę linię
         }}
         speed={1000}
         pagination={{ clickable: true }}
@@ -63,13 +69,13 @@ const ImageCarousel: React.FC = () => {
       >
         {selectedImages.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="h-full">
-              <img
-                src={image.src}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <Image
+              src={image.src}
+              alt={`Slide ${index + 1}`}
+              className="object-cover"
+              fill
+              sizes="100vw"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

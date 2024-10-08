@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import ButtonNavbar from './ButtonNavbar';
 import Link from 'next/link';
-import Image from 'next/image';
-import one from '../../../assets/one.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -24,31 +22,33 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed  flex md:justify-center md:items-center justify-end  z-40 w-full font-patrick  text-xl lg:text-[27px] bg-none md:bg-amber-700/40 text-black shadow-lg  ">
-      <ul className="hidden md:flex space-x-16 md:justify-center md:items-center ">
+    <nav
+      className={`fixed  flex md:justify-center md:items-center justify-end  z-40 w-full font-patrick  text-xl lg:text-[27px] sm:bg-black/30 text-white shadow-lg py-4 text`}
+    >
+      <ul className="hidden md:flex space-x-20 md:justify-center md:items-center ">
         <li>
-          <Link href="/" className="hover:underline text-decoration-gold">
+          <Link href="/" className="hover:underline text-decoration-white">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/about" className="hover:underline text-decoration-gold">
+          <Link href="/about" className="hover:underline text-decoration-white">
             Oferta
           </Link>
         </li>
-        <Image src={one} alt="logo" width={200} height={50} priority />
+
         <li>
           <Link
             href="/contact"
-            className="hover:underline text-decoration-gold"
+            className="hover:underline text-decoration-white"
           >
-            Porfolio
+            Porftolio
           </Link>
         </li>
         <li>
           <Link
             href="/contact"
-            className="hover:underline text-decoration-gold"
+            className="hover:underline text-decoration-white"
           >
             Kontakt
           </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
       <ButtonNavbar isOpen={isOpen} toggleMenu={toggleMenu} />
 
       {isOpen && (
-        <ul className="fixed inset-0   flex flex-col items-center justify-center font-lato font-bold text-[50px] bg-amber-700/40 text-[#F1FAEE]">
+        <ul className="fixed inset-0   flex flex-col items-center justify-center font-lato font-bold text-[50px] bg-black/60 text-[#F1FAEE]">
           <li className="mt-8 p-12">
             <Link href="/" className="hover:underline" onClick={toggleMenu}>
               Home

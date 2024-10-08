@@ -8,14 +8,14 @@ import about from '../../../assets/about.jpg';
 const FadeInComponent: React.FC = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 0, scale: 0.75 }} // Początkowa pozycja i przezroczystość
-      whileInView={{ opacity: 1, x: 0, scale: 1 }} // Kiedy komponent jest widoczny
-      transition={{ duration: 3 }} // Czas trwania animacji
+      initial={{ opacity: 0, y: 300 }} // Początkowa pozycja i przezroczystość
+      whileInView={{ opacity: 1, y: 0 }} // Kiedy komponent jest widoczny
+      transition={{ duration: 1.5 }} // Czas trwania animacji
       viewport={{ once: true }} // Animacja występuje tylko raz przy przewinięciu
-      className="my-10 flex justify-center items-center flex-col md:flex-row"
+      className="my-10 flex justify-center items-center flex-col lg:flex-row white-bg-section"
     >
       <Image src={about} alt="zdjęcie fotografa" width={400} priority />
-      <div className="text-black mb-4  w-[300px] sm:w-[472px]  lg:w-[430px] font-patrick lg:ml-16 text-[20px] text-center">
+      <div className="text-black mb-4  w-[300px] sm:w-[472px]  lg:w-[430px] font-patrick lg:ml-16  text-[17px] lg:text-[20px] text-center">
         <span>
           Witaj, jestem fotografem i od zawsze fascynuje mnie możliwość
           zatrzymania ulotnych chwil w kadrze i opowiedzenia historii za pomocą

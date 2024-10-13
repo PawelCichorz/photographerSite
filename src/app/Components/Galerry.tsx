@@ -25,18 +25,12 @@ const Galerry = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-        className="my-10 flex justify-center items-center flex-col font-patrick"
+        className="my-10 flex justify-center items-center flex-col font-poppins"
       >
-        <motion.h2
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}
-          viewport={{ once: true }}
-          className="text-center text-3xl text-amber-700 mb-6 "
-        >
+        <h2 className="text-center text-3xl text-amber-700 mb-6 ">
           ZOBACZ JAK PRACUJĘ
-        </motion.h2>
-        <div className="flex items-center lg:justify-around flex-wrap justify-center white-bg-section">
+        </h2>
+        <div className="flex items-center lg:justify-around flex-wrap justify-center ">
           <Image
             src={a}
             alt="zdjęcie fotografa"
@@ -135,7 +129,7 @@ const Galerry = () => {
         </div>
         <Link
           href="/portfolio"
-          className="lg:px-6 lg:py-2 px-10 py-6 text-white font-patrick bg-amber-700/40 m-4 rounded-sm text-[24px] rounded-lg"
+          className="lg:px-6 lg:py-2 px-10 py-6 text-white font-poppins bg-amber-700/40 m-4 rounded-sm text-[24px] rounded-lg"
         >
           Więcej...
         </Link>

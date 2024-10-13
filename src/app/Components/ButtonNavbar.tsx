@@ -10,13 +10,13 @@ const ButtonNavbar: React.FC<ButtonNavbarProps> = ({ isOpen, toggleMenu }) => {
     <div className="md:hidden z-50 ">
       <button
         onClick={toggleMenu}
-        className="text-white focus:outline-none p-4 "
+        className="text-white focus:outline-none p-5  "
       >
         {isOpen ? (
           <svg
-            className="w-12 h-12"
+            className="w-14 h-14"
             fill="none"
-            stroke="currentColor"
+            stroke="#78716c"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -29,9 +29,9 @@ const ButtonNavbar: React.FC<ButtonNavbarProps> = ({ isOpen, toggleMenu }) => {
           </svg>
         ) : (
           <svg
-            className="w-12 h-12"
+            className="w-14 h-14"
             fill="none"
-            stroke="currentColor"
+            stroke="#78716c"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

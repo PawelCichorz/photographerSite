@@ -16,6 +16,7 @@ const config: Config = {
         lato: ['Lato', 'sans-serif'],
         patrick: ['Patrick Hand', 'cursive'],
         grypen: ['Qwitcher Grypen', 'cursive'],
+        poppins: ['Poppins', 'normal'],
       },
     },
   },

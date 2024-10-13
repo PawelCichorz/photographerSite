@@ -7,7 +7,6 @@ import Galerry from './Components/Galerry';
 import Opinions from './Components/Opinions';
 import Questions from './Components/Questions';
 import Contact from './Components/Contact';
-import Footer from './Components/Footer';
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <Opinions />
       <Questions />
       <Contact />
-      <Footer />
     </>
   );
 }

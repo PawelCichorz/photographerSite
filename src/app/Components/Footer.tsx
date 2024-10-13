@@ -9,12 +9,22 @@ const Footer = () => {
         <p>Wszystkie zdjęcia objęte są prawem autorskim.</p>
       </div>
       <div className="lg:text-right">
-        <Link href="/polityka-prywatnosci" className="hover:underline">
-          Polityka Prywatności
+        <Link
+          href="/pdf/Polityka.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          Polityka Prywatności i RODO
         </Link>
         <div className="mt-2">
-          <Link href="/klauzula-rodo" className="hover:underline">
-            Klauzula RODO
+          <Link
+            href="/pdf/regulaminSesji.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Regulamin Sesji
           </Link>
         </div>
       </div>

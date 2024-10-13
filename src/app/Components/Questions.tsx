@@ -77,11 +77,11 @@ const FAQ = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-        className=" py-10 font-patrick"
+        className=" py-10 font-poppins"
       >
         <div className="container mx-auto px-4 ">
           <h2 className="text-3xl font-bold text-center text-amber-700 mb-8">
-            PRZYDATNE INFORMACJĘ
+            Q & A
           </h2>
           <div className="space-y-4">
             {faqData.map((item, index) => (

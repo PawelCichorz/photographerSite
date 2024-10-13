@@ -41,17 +41,20 @@ export default function ContactForm() {
 
   return (
     <>
-      <div className="border-t border-gray-300 my-8 opacity-50 white-bg-section "></div>
+      <div
+        className="border-t border-gray-300 my-8 opacity-50  "
+        id="contact"
+      ></div>
       <motion.div
         initial={{ opacity: 0, y: 300 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-        className="flex flex-col lg:flex-row w-full justify-around  font-patrick pb-8"
+        className="flex flex-col md:flex-row w-full justify-around items-center  font-poppins pb-8"
       >
-        <div className="mx-auto p-4   flex flex-col items-center justify-center   ">
+        <div className=" mr-2 p-4   flex flex-col items-center justify-center   ">
           <h2 className="text-amber-700 text-3xl font-bold mb-4">
-            SKONTAKTUJ SIĘ ZE MNĄ
+            SKONTAKTUJ SIĘ
           </h2>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -108,9 +111,9 @@ export default function ContactForm() {
             )}
           </form>
         </div>
-        <div className="flex flex-col  items-center p-4 w-full lg:w-1/3 ">
+        <div className="flex flex-col  items-center p-4  lg:w-1/3 ">
           {' '}
-          <h2 className="text-extrabold text-3xl">
+          <h2 className="text-extrabold text-2xl">
             Fotografia Klaudia Cichórz
           </h2>
           <p className="text-bold text-xl mb-8">Fotograf Skawina i okolice</p>

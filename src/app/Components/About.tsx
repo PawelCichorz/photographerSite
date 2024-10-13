@@ -14,8 +14,8 @@ const FadeInComponent: React.FC = () => {
       viewport={{ once: true }} // Animacja występuje tylko raz przy przewinięciu
       className="my-10 flex justify-center items-center flex-col lg:flex-row white-bg-section"
     >
-      <Image src={about} alt="zdjęcie fotografa" width={400} priority />
-      <div className="text-black mb-4  w-[300px] sm:w-[472px]  lg:w-[430px] font-patrick lg:ml-16  text-[17px] lg:text-[20px] text-center">
+      <Image src={about} alt="zdjęcie fotografa" width={420} priority />
+      <div className="text-black mb-4  w-[300px] sm:w-[472px]  lg:w-[470px] font-poppins lg:ml-8  text-[17px] lg:text-[16px] text-center">
         <span>
           Witaj, jestem fotografem i od zawsze fascynuje mnie możliwość
           zatrzymania ulotnych chwil w kadrze i opowiedzenia historii za pomocą
@@ -30,7 +30,7 @@ const FadeInComponent: React.FC = () => {
         <p className="w-full text-center">
           <TypeAnimation
             className="font-grypen text-[45px] "
-            sequence={[3000, ' Klaudia Cichórz']}
+            sequence={[5000, ' Klaudia Cichórz']}
             wrapper="span"
             speed={1}
           />

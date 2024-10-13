@@ -66,7 +66,7 @@ const Opinions = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
           viewport={{ once: true }}
-          className="text-center text-2xl font-patrick mb-6 text-amber-700"
+          className="text-center text-2xl font-poppins mb-6 text-amber-700"
         >
           OPINIE
           <br />

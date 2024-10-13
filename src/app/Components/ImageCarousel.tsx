@@ -48,7 +48,7 @@ const ImageCarousel: React.FC = () => {
     <div className="h-screen relative ">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10 pointer-events-none "></div>
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-10 border-4 border-white opacity-60 z-10 text-white lg:block hidden">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  opacity-60 z-10 text-white lg:block hidden">
         {' '}
         <Image src={logo} alt="logo" width={300} priority />
       </div>

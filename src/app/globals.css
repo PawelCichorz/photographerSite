@@ -4,12 +4,7 @@
 
 
 
-@font-face {
-  font-family: 'Lato';
-  src: url('./fonts/Lato300.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 @font-face {
   font-family: 'Lato';

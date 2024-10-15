@@ -15,6 +15,7 @@ export default function ContactForm() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<FormData>();
 
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
@@ -31,6 +32,7 @@ export default function ContactForm() {
 
       if (res.ok) {
         setSuccessMessage('Twoja wiadomość została wysłana!');
+        reset();
       } else {
         setSuccessMessage('Błąd podczas wysyłania wiadomości.');
       }
@@ -42,7 +44,7 @@ export default function ContactForm() {
   return (
     <>
       <div
-        className="border-t border-gray-300 my-8 opacity-50  "
+        className="border-t border-gray-300 my-8 opacity-50"
         id="contact"
       ></div>
       <motion.div
@@ -50,9 +52,9 @@ export default function ContactForm() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-        className="flex flex-col md:flex-row w-full justify-around items-center  font-poppins pb-8"
+        className="flex flex-col md:flex-row w-full justify-around items-center font-poppins pb-8"
       >
-        <div className="  p-4 flex flex-col items-center justify-center   ">
+        <div className="p-4 flex flex-col items-center justify-center">
           <h2 className="text-amber-700 text-3xl font-bold mb-4">
             NAPISZ DO MNIE
           </h2>
@@ -63,7 +65,7 @@ export default function ContactForm() {
                 placeholder="Imię"
                 type="text"
                 {...register('name', { required: 'Podaj swoje imię.' })}
-                className=" p-2 bg-slate-200/40  rounded border border-gray-300 w-[315px] lg:w-[500px] 2xl:w-[700px]"
+                className="p-2 bg-slate-200/40 rounded border border-gray-300 w-[315px] lg:w-[500px] 2xl:w-[700px]"
               />
               {errors.name && (
                 <p className="text-red-500">{errors.name.message}</p>
@@ -81,18 +83,18 @@ export default function ContactForm() {
                     message: 'Niepoprawny format email.',
                   },
                 })}
-                className=" p-2 bg-slate-200/40 rounded border border-gray-300 w-[315px] lg:w-[500px] 2xl:w-[700px]"
+                className="p-2 bg-slate-200/40 rounded border border-gray-300 w-[315px] lg:w-[500px] 2xl:w-[700px]"
               />
               {errors.email && (
                 <p className="text-red-500">{errors.email.message}</p>
               )}
             </div>
 
-            <div className="flex  flex-col justify-center align-center text-center">
+            <div className="flex flex-col justify-center align-center text-center">
               <textarea
                 placeholder="Wiadomość"
                 {...register('message', { required: 'Wpisz swoją wiadomość.' })}
-                className=" p-2 bg-slate-200/40 rounded border border-gray-300 h-[150px]"
+                className="p-2 bg-slate-200/40 rounded border border-gray-300 h-[150px]"
               />
               {errors.message && (
                 <p className="text-red-500">{errors.message.message}</p>
@@ -111,8 +113,7 @@ export default function ContactForm() {
             )}
           </form>
         </div>
-        <div className="flex flex-col  items-center p-4  w-[317px] md:w-[440px] lg:w-[450px] 2xl:w-[650px]">
-          {' '}
+        <div className="flex flex-col items-center p-4 w-[317px] md:w-[440px] lg:w-[450px] 2xl:w-[650px]">
           <h2 className="text-extrabold text-2xl text-center 2xl:text-3xl">
             Fotografia Klaudia Cichórz
           </h2>
@@ -121,12 +122,12 @@ export default function ContactForm() {
           </p>
           <p className="text-lg mb-2 2xl:text-xl">
             34-113 Sosnowice ul.Spokojna 41
-          </p>{' '}
+          </p>
           <p className="text-lg text-amber-700 2xl:text-xl">tel:509-911-325</p>
           <p className="sm:text-lg text-[16px] text-amber-700 mb-8 2xl:text-xl">
             email: cichorzklaudia@gmail.com
           </p>
-          <p className="text-sm  text-center 2xl:text-lg">
+          <p className="text-sm text-center 2xl:text-lg">
             Wysyłając wiadomość wyrażasz zgodę na przetwarzanie danych osobowych
             zgodnie z Ustawą o ochronie danych osobowych w związku z wysłaniem
             zapytania przez formularz kontaktowy. Podanie przez Ciebie danych

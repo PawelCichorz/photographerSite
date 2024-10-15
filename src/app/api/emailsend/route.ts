@@ -10,19 +10,11 @@ function validateFormData(name: string, email: string, message: string) {
   return emailPattern.test(email);
 }
 
-// function validateAntiSpam(headers: Headers) {
-//   const userAgent = headers.get('user-agent') || '';
-//   const referer = headers.get('referer') || '';
-
-//   if (!userAgent || !referer.includes('your-domain.com')) {
-//     return false;
-//   }
-
-//   return true;
-// }
-
 export async function POST(req: Request) {
-  console.log(process.env.EMAIL_PASS);
+  console.log('Używane poświadczenia:', {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  });
   try {
     const { name, email, message } = await req.json();
 
@@ -32,13 +24,6 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
-
-    // if (!validateAntiSpam(req.headers)) {
-    //   return NextResponse.json(
-    //     { error: 'Zablokowano jako potencjalny spam' },
-    //     { status: 403 }
-    //   );
-    // }
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -59,7 +44,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('Wystąpił błąd:', error); // logowanie błędu
+    console.error('Wystąpił błąd:', error);
     return NextResponse.json(
       { error: 'Błąd podczas wysyłania wiadomości' },
       { status: 500 }

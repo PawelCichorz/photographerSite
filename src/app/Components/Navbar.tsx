@@ -83,7 +83,6 @@ const Navbar = () => {
 
         {isOpen && (
           <ul className="fixed inset-0 flex flex-col items-center justify-center font-poppins  text-[40px] bg-black/60 text-[#F1FAEE] ">
-           
             {isOpenOffer ? (
               <>
                 <li className="mt-6 p-6 text-2xl">

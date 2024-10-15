@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-
 const dropInVariants = {
   hidden: { opacity: 0, y: -50 },
   visible: (index: number) => ({
@@ -36,7 +35,6 @@ const EstatePricing = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-10 font-poppins">
-
       <motion.h1
         className="lg:text-4xl font-bold text-center mb-6 text-xl"
         initial="hidden"
@@ -47,7 +45,6 @@ const EstatePricing = () => {
         CENNIK SESJI NIERUCHOMOŚCI
       </motion.h1>
 
-     
       <div className="text-center lg:mb-12 space-y-4 lg:text-2xl text-xl text-gray-700 flex items-center flex-col">
         {showText &&
           services.map((service, index) => (
@@ -64,7 +61,6 @@ const EstatePricing = () => {
           ))}
       </div>
 
-    
       <motion.div
         className="flex flex-col items-center md:flex-row md:justify-center md:space-x-8 mt-10"
         initial="hidden"
@@ -72,7 +68,6 @@ const EstatePricing = () => {
         variants={dropInVariants}
         custom={services.length + 2}
       >
-      
         <motion.div
           className="p-6 border border-amber-800 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform mb-6 md:mb-0 w-[330px] lg:w-[450px]"
           whileHover={{ scale: 1.05 }}
@@ -92,7 +87,6 @@ const EstatePricing = () => {
           </ul>
         </motion.div>
 
-    
         <motion.div
           className="p-6 border border-amber-800 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform w-[330px] lg:w-[450px]"
           whileHover={{ scale: 1.05 }}
@@ -113,13 +107,12 @@ const EstatePricing = () => {
         </motion.div>
       </motion.div>
 
-     
       <motion.div
         className="mt-12 max-w-3xl mx-auto text-center text-sm text-gray-600 w-[300px] lg:w-[450px]"
         initial="hidden"
         animate="visible"
         variants={dropInVariants}
-        custom={services.length + 2} 
+        custom={services.length + 2}
       >
         Niniejsza oferta nie stanowi oferty handlowej w rozumieniu KC i może
         ulec zmianie. Istnieje możliwość przygotowania indywidualnej oferty oraz

@@ -136,8 +136,8 @@ const Galerry = () => {
         </Link>
         <Link
           href="https://m.me/klaudia.wiechec.10"
-          target="_blank" 
-          rel="noopener noreferrer" 
+          target="_blank"
+          rel="noopener noreferrer"
           className=" px-8 py-4 bg-transparent text-amber-700 border border-amber-700 rounded-lg hover:bg-amber-700 hover:text-white transition-all animate-pulse text-xl sm:text-2xl"
         >
           Napisz na Messenger

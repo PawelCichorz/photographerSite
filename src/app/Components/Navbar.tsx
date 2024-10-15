@@ -31,30 +31,30 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed flex md:justify-center md:items-center justify-end z-40 w-full font-patrick text-xl lg:text-[27px]   py-4 border-b border-gray-300/30  `}
+        className={`fixed flex md:justify-center md:items-center justify-end z-40 w-full font-poppins text-xl lg:text-[27px]  2xl:text-[40px] py-4   `}
       >
         <ul className="hidden md:flex space-x-20 md:justify-center md:items-center text-black ">
           <li>
-            <Link href="/" className="hover:text-gray-400 ">
+            <Link href="/" className="hover:text-amber-600 ">
               Home
             </Link>
           </li>
           <li onClick={toggleOffers} className="relative">
-            <p className="hover:text-gray-400 cursor-pointer">Oferta</p>
+            <p className="hover:text-amber-600 cursor-pointer">Oferta</p>
             {isOpenOffer && (
-              <ul className="absolute left-1/2 p-4    mt-4 transform -translate-x-1/2 w-[230px] text-center text-[35px] shadow-xl">
+              <ul className="absolute left-1/2 p-4    space-y-2 transform -translate-x-1/2 w-[230px] text-center text-[20px] shadow-xl w-[500px] ">
                 <li>
-                  <Link href="/reportage" className="hover:text-gray-400 ">
+                  <Link href="/reportage" className="hover:text-amber-600 ">
                     Sesje Reportażowe
                   </Link>
                 </li>
                 <li>
-                  <Link href="/studio" className="hover:text-gray-400 ">
+                  <Link href="/studio" className="hover:text-amber-600 ">
                     Sesje Rodzinne / Studio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/estate" className="hover:text-gray-400 ">
+                  <Link href="/estate" className="hover:text-amber-600 ">
                     Sesje Nieruchomości
                   </Link>
                 </li>
@@ -62,7 +62,7 @@ const Navbar = () => {
             )}
           </li>
           <li>
-            <Link href="/portfolio" className="hover:text-gray-400 ">
+            <Link href="/portfolio" className="hover:text-amber-600 ">
               Portfolio
             </Link>
           </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
               smooth={true}
               offset={-50}
               duration={1200}
-              className="hover:text-gray-400 "
+              className="hover:text-amber-600 "
             >
               Kontakt
             </ScrollLink>
@@ -82,8 +82,8 @@ const Navbar = () => {
         <ButtonNavbar isOpen={isOpen} toggleMenu={toggleMenu} />
 
         {isOpen && (
-          <ul className="fixed inset-0 flex flex-col items-center justify-center font-poppins font-bold text-[45px] bg-black/60 text-[#F1FAEE]">
-            {/* Zmieniamy zawartość w zależności od stanu */}
+          <ul className="fixed inset-0 flex flex-col items-center justify-center font-poppins  text-[40px] bg-black/60 text-[#F1FAEE] ">
+           
             {isOpenOffer ? (
               <>
                 <li className="mt-6 p-6 text-2xl">
@@ -146,7 +146,7 @@ const Navbar = () => {
                     smooth={true}
                     offset={-50}
                     duration={1200}
-                    className="hover:underline text-decoration-white"
+                    className="hover:underline "
                   >
                     Kontakt
                   </ScrollLink>

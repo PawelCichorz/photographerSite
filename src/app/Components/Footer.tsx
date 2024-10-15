@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col  lg:flex-row justify-between items-center h-[20vh] bg-black text-gray-200 p-4 font-patrick text-center">
+    <footer className="flex flex-col text-[14px] lg:text-[16px] md:flex-row justify-between items-center min-h-[15vh] bg-black text-gray-200 p-4 font-poppins text-center 2xl:text-xl">
       <div className="lg:text-left">
         <p>© 2024. Fotografia Klaudia Cichórz</p>
         <p>Wszystkie zdjęcia objęte są prawem autorskim.</p>

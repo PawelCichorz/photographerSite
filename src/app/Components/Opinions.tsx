@@ -23,8 +23,8 @@ const comments: Comment[] = [
     text: 'Skorzystałem z sesji rodzinnej- pokoleniowej. Bardzo przyjemna atmosfera, cudowne zdjęcia, wydobyte emocje :) Polecam',
   },
   {
-    name: 'Ania',
-    text: 'Usługi na najwyższym poziomie! Zespół był bardzo pomocny i cierpliwy. Dziękuję za wsparcie w procesie zakupu!',
+    name: 'Michał',
+    text: 'Pełne zaangażowanie do swojej pracy oraz dusza artysty Polecam!!',
   },
   {
     name: 'Klaudia',

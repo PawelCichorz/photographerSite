@@ -71,14 +71,14 @@ const Portfolio = () => {
         <div className="flex items-center lg:justify-around flex-wrap justify-center pb-4 ">
           <Image
             src={k}
-            alt="zdjęcie fotografa"
+            alt="matka trzyma dziecko na rękach"
             width={300}
             layout="intrinsic"
             className="lg:m-[6px] mx-[4px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
           <Image
             src={kk}
-            alt="zdjęcie fotografa"
+            alt="ojciec z noworodkiem"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -86,7 +86,7 @@ const Portfolio = () => {
           />
           <Image
             src={kkk}
-            alt="intrinsic"
+            alt="sesja fotograficzna sióstr"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -94,7 +94,7 @@ const Portfolio = () => {
           />
           <Image
             src={kkkk}
-            alt="zdjęcie fotografa"
+            alt="rodzina z mały dzieckiem"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -102,7 +102,7 @@ const Portfolio = () => {
           />
           <Image
             src={l}
-            alt="zdjęcie fotografa"
+            alt="modelka na sesji plenerowej"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -110,7 +110,7 @@ const Portfolio = () => {
           />
           <Image
             src={ll}
-            alt="intrinsic"
+            alt="kobieta w sukience"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -118,7 +118,7 @@ const Portfolio = () => {
           />
           <Image
             src={lll}
-            alt="zdjęcie fotografa"
+            alt="modelka"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -126,7 +126,7 @@ const Portfolio = () => {
           />
           <Image
             src={llll}
-            alt="zdjęcie fotografa"
+            alt="kobieta pośród skał"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -134,7 +134,7 @@ const Portfolio = () => {
           />
           <Image
             src={m}
-            alt="intrinsic"
+            alt="sesja mamy z synem"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -142,7 +142,7 @@ const Portfolio = () => {
           />
           <Image
             src={mm}
-            alt="zdjęcie fotografa"
+            alt="rodzina"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -150,7 +150,7 @@ const Portfolio = () => {
           />
           <Image
             src={mmm}
-            alt="intrinsic"
+            alt="mama z dzieckiem"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -158,7 +158,7 @@ const Portfolio = () => {
           />
           <Image
             src={mmmm}
-            alt="zdjęcie fotografa"
+            alt="mama z dzieckiem robią smieśzne miny"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -166,7 +166,7 @@ const Portfolio = () => {
           />
           <Image
             src={g}
-            alt="zdjęcie fotografa"
+            alt="sesja zachód słonca"
             width={300}
             layout="intrinsic"
             className="lg:m-[6px] mx-[4px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
@@ -181,7 +181,7 @@ const Portfolio = () => {
           />
           <Image
             src={ggg}
-            alt="intrinsic"
+            alt="sesja zdjęciowa w Krakowie"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -189,7 +189,7 @@ const Portfolio = () => {
           />
           <Image
             src={gggg}
-            alt="zdjęcie fotografa"
+            alt="kobieta w drzwiach"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -197,7 +197,7 @@ const Portfolio = () => {
           />
           <Image
             src={h}
-            alt="zdjęcie fotografa"
+            alt="kobieta w marynarce"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -205,7 +205,7 @@ const Portfolio = () => {
           />
           <Image
             src={hh}
-            alt="intrinsic"
+            alt="sesja zdjęciowa w studio"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -213,7 +213,7 @@ const Portfolio = () => {
           />
           <Image
             src={hhh}
-            alt="zdjęcie fotografa"
+            alt="dziewczyna w czarnym stroju"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -221,7 +221,7 @@ const Portfolio = () => {
           />
           <Image
             src={hhhh}
-            alt="zdjęcie fotografa"
+            alt="uśmiechnięta dziewczyna"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -229,7 +229,7 @@ const Portfolio = () => {
           />
           <Image
             src={j}
-            alt="intrinsic"
+            alt="sesja zdjęciowa z modelką"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -237,7 +237,7 @@ const Portfolio = () => {
           />
           <Image
             src={jjj}
-            alt="zdjęcie fotografa"
+            alt="chrzciny"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -245,7 +245,7 @@ const Portfolio = () => {
           />
           <Image
             src={jjjj}
-            alt="intrinsic"
+            alt="sesja zdjęciowa na łonie natury"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -253,7 +253,7 @@ const Portfolio = () => {
           />
           <Image
             src={jj}
-            alt="zdjęcie fotografa"
+            alt="kobieta w mieście"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -261,14 +261,14 @@ const Portfolio = () => {
           />
           <Image
             src={d}
-            alt="zdjęcie fotografa"
+            alt="ubieranie choinki"
             width={300}
             layout="intrinsic"
             className="lg:m-[6px] mx-[4px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
           <Image
             src={dd}
-            alt="zdjęcie fotografa"
+            alt="mały pies"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -276,7 +276,7 @@ const Portfolio = () => {
           />
           <Image
             src={ddd}
-            alt="intrinsic"
+            alt="mama z córką na plaży"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -284,7 +284,7 @@ const Portfolio = () => {
           />
           <Image
             src={dddd}
-            alt="zdjęcie fotografa"
+            alt="sesja rodzinna"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -292,7 +292,7 @@ const Portfolio = () => {
           />
           <Image
             src={e}
-            alt="zdjęcie fotografa"
+            alt="chłpiec lepi ciasto"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -300,7 +300,7 @@ const Portfolio = () => {
           />
           <Image
             src={ee}
-            alt="intrinsic"
+            alt="mama z córką"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -308,7 +308,7 @@ const Portfolio = () => {
           />
           <Image
             src={eee}
-            alt="zdjęcie fotografa"
+            alt="całująca się para"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -316,7 +316,7 @@ const Portfolio = () => {
           />
           <Image
             src={eeee}
-            alt="zdjęcie fotografa"
+            alt="sesja na zachód słońca"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -324,7 +324,7 @@ const Portfolio = () => {
           />
           <Image
             src={f}
-            alt="intrinsic"
+            alt="sesja zakochanej pary"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -332,7 +332,7 @@ const Portfolio = () => {
           />
           <Image
             src={ff}
-            alt="zdjęcie fotografa"
+            alt="studniówka"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -340,7 +340,7 @@ const Portfolio = () => {
           />
           <Image
             src={fff}
-            alt="intrinsic"
+            alt="tańcząca para"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -348,7 +348,7 @@ const Portfolio = () => {
           />
           <Image
             src={ffff}
-            alt="zdjęcie fotografa"
+            alt="młodzi ludzie"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -356,14 +356,14 @@ const Portfolio = () => {
           />
           <Image
             src={a}
-            alt="zdjęcie fotografa"
+            alt="chłopiec robi ciasto w swetrze świątecznym"
             width={300}
             layout="intrinsic"
             className="lg:m-[6px] mx-[4px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
           <Image
             src={aa}
-            alt="zdjęcie fotografa"
+            alt="modelka"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -371,7 +371,7 @@ const Portfolio = () => {
           />
           <Image
             src={aaaa}
-            alt="intrinsic"
+            alt="studniówka"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -379,7 +379,7 @@ const Portfolio = () => {
           />
           <Image
             src={aaa}
-            alt="zdjęcie fotografa"
+            alt="chrzciny"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -395,7 +395,7 @@ const Portfolio = () => {
           />
           <Image
             src={bb}
-            alt="intrinsic"
+            alt="silna kobieta"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -403,7 +403,7 @@ const Portfolio = () => {
           />
           <Image
             src={bbb}
-            alt="zdjęcie fotografa"
+            alt="sesja fotograficzna w Brzeźnicy"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -411,7 +411,7 @@ const Portfolio = () => {
           />
           <Image
             src={bbbb}
-            alt="zdjęcie fotografa"
+            alt="kobieta w sukience"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -419,7 +419,7 @@ const Portfolio = () => {
           />
           <Image
             src={c}
-            alt="intrinsic"
+            alt="mama z synem"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -435,7 +435,7 @@ const Portfolio = () => {
           />
           <Image
             src={ccc}
-            alt="intrinsic"
+            alt="kobieca sesja zdjęciowa"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -443,7 +443,7 @@ const Portfolio = () => {
           />
           <Image
             src={cccc}
-            alt="zdjęcie fotografa"
+            alt="wałek"
             width={300}
             layout="intrinsic"
             placeholder="blur"
@@ -451,14 +451,14 @@ const Portfolio = () => {
           />
           <Image
             src={w}
-            alt="zdjęcie fotografa"
+            alt="napis rodzina"
             width={330}
             layout="intrinsic"
             className="lg:m-[6px] mx-[4px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
           <Image
             src={ww}
-            alt="zdjęcie fotografa"
+            alt="sesja poślubna"
             width={330}
             layout="intrinsic"
             placeholder="blur"
@@ -466,7 +466,7 @@ const Portfolio = () => {
           />
           <Image
             src={www}
-            alt="intrinsic"
+            alt="dziewczna nad jeziorem"
             width={330}
             layout="intrinsic"
             placeholder="blur"
@@ -474,7 +474,7 @@ const Portfolio = () => {
           />
           <Image
             src={wwww}
-            alt="zdjęcie fotografa"
+            alt="dziewczyna na ławce"
             width={330}
             layout="intrinsic"
             placeholder="blur"
@@ -482,7 +482,7 @@ const Portfolio = () => {
           />
           <Image
             src={wwwww}
-            alt="zdjęcie fotografa"
+            alt="ubranka chrzcielne"
             width={330}
             layout="intrinsic"
             placeholder="blur"
@@ -490,7 +490,7 @@ const Portfolio = () => {
           />
           <Image
             src={wwwwww}
-            alt="zdjęcie fotografa"
+            alt="niemowlak"
             width={330}
             layout="intrinsic"
             placeholder="blur"

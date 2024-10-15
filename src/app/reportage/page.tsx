@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-// Definiowanie animacji spadania dla każdego elementu
+
 const dropInVariants = {
   hidden: { opacity: 0, y: -50 },
   visible: (index: number) => ({
@@ -12,7 +12,7 @@ const dropInVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      delay: index * 0.6, // Każdy element ma opóźnienie w zależności od indeksu
+      delay: index * 0.6, 
       type: 'spring',
     },
   }),
@@ -36,24 +36,24 @@ const Studio = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-10 font-poppins">
-      {/* Animowany nagłówek "REPORTAŻ CENNIK" */}
+      
       <motion.h1
         className="lg:text-4xl font-bold text-center mb-6 text-2xl"
         initial="hidden"
         animate="visible"
         variants={dropInVariants}
-        custom={0} // Pierwszy element, bez opóźnienia
+        custom={0} 
       >
         REPORTAŻ CENNIK
       </motion.h1>
 
-      {/* Animowana lista "Wydarzenia" */}
+     
       <div className="text-center lg:mb-12 space-y-4 lg:text-2xl text-xl text-gray-700 flex items-center flex-col">
         {showText &&
           events.map((event, index) => (
             <motion.div
               key={event}
-              custom={index + 1} // Opóźnienie dla każdego napisu "Wydarzenia"
+              custom={index + 1} 
               initial="hidden"
               animate="visible"
               variants={dropInVariants}
@@ -64,17 +64,17 @@ const Studio = () => {
           ))}
       </div>
 
-      {/* Sekcja z cennikiem */}
+     
       <motion.div
         className="flex flex-col items-center md:flex-row md:justify-center md:space-x-8 mt-10"
         initial="hidden"
         animate="visible"
         variants={dropInVariants}
-        custom={events.length + 1} // Cennik pojawia się po napisach "Wydarzenia"
+        custom={events.length + 2} 
       >
-        {/* Tabelka Basic */}
+      
         <motion.div
-          className="p-6 border border-gray-300 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform mb-6 md:mb-0 w-[330px] lg:w-[450px]"
+          className="p-6 border border-amber-800 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform mb-6 md:mb-0 w-[330px] lg:w-[450px] h-[550px]"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="lg:text-2xl font-bold lg:mb-4 text-xl text-center">
@@ -99,9 +99,9 @@ const Studio = () => {
           </ul>
         </motion.div>
 
-        {/* Tabelka Standard */}
+   
         <motion.div
-          className="p-6 border border-gray-300 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform w-[300px] lg:w-[450px]"
+          className="p-6 border border-amber-800 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform w-[330px] lg:w-[450px] h-[550px]"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="lg:text-2xl font-bold lg:mb-4 text-xl text-center">
@@ -128,13 +128,13 @@ const Studio = () => {
         </motion.div>
       </motion.div>
 
-      {/* Animowana informacja o ofercie */}
+      
       <motion.div
         className="mt-12 max-w-3xl mx-auto text-center text-sm text-gray-600 w-[300px] lg:w-[450px]"
         initial="hidden"
         animate="visible"
         variants={dropInVariants}
-        custom={events.length + 2} // Informacja pojawia się po tabelkach
+        custom={events.length + 2} 
       >
         Niniejsza oferta nie stanowi oferty handlowej w rozumieniu KC i może
         ulec zmianie. Istnieje możliwość przygotowania indywidualnej oferty oraz

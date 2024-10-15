@@ -52,9 +52,9 @@ export default function ContactForm() {
         viewport={{ once: true }}
         className="flex flex-col md:flex-row w-full justify-around items-center  font-poppins pb-8"
       >
-        <div className=" mr-2 p-4   flex flex-col items-center justify-center   ">
+        <div className="  p-4 flex flex-col items-center justify-center   ">
           <h2 className="text-amber-700 text-3xl font-bold mb-4">
-            SKONTAKTUJ SIĘ
+            NAPISZ DO MNIE
           </h2>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -63,7 +63,7 @@ export default function ContactForm() {
                 placeholder="Imię"
                 type="text"
                 {...register('name', { required: 'Podaj swoje imię.' })}
-                className=" p-2 bg-slate-200/40  rounded border border-gray-300 w-[300px] lg:w-[400px]"
+                className=" p-2 bg-slate-200/40  rounded border border-gray-300 w-[315px] lg:w-[500px] 2xl:w-[700px]"
               />
               {errors.name && (
                 <p className="text-red-500">{errors.name.message}</p>
@@ -81,7 +81,7 @@ export default function ContactForm() {
                     message: 'Niepoprawny format email.',
                   },
                 })}
-                className=" p-2 bg-slate-200/40 rounded border border-gray-300 w-[300px] lg:w-[400px]"
+                className=" p-2 bg-slate-200/40 rounded border border-gray-300 w-[315px] lg:w-[500px] 2xl:w-[700px]"
               />
               {errors.email && (
                 <p className="text-red-500">{errors.email.message}</p>
@@ -111,20 +111,22 @@ export default function ContactForm() {
             )}
           </form>
         </div>
-        <div className="flex flex-col  items-center p-4  lg:w-1/3 ">
+        <div className="flex flex-col  items-center p-4  w-[317px] md:w-[440px] lg:w-[450px] 2xl:w-[650px]">
           {' '}
-          <h2 className="text-extrabold text-2xl">
+          <h2 className="text-extrabold text-2xl text-center 2xl:text-3xl">
             Fotografia Klaudia Cichórz
           </h2>
-          <p className="text-bold text-xl mb-8">Fotograf Skawina i okolice</p>
-          <p className="text-lg mb-2">
-            Adres: 34-113 Sosnowice ul.Spokojna 41
+          <p className="text-bold text-xl mb-8 text-center 2xl:text-2xl">
+            Fotograf Skawina / Kraków / Brzeźnica / Wadowice
+          </p>
+          <p className="text-lg mb-2 2xl:text-xl">
+            34-113 Sosnowice ul.Spokojna 41
           </p>{' '}
-          <p className="text-lg text-amber-700">tel:509-911-325</p>
-          <p className="text-lg text-amber-700 mb-8">
+          <p className="text-lg text-amber-700 2xl:text-xl">tel:509-911-325</p>
+          <p className="sm:text-lg text-[16px] text-amber-700 mb-8 2xl:text-xl">
             email: cichorzklaudia@gmail.com
           </p>
-          <p className="text-sm w-[300px] text-center">
+          <p className="text-sm  text-center 2xl:text-lg">
             Wysyłając wiadomość wyrażasz zgodę na przetwarzanie danych osobowych
             zgodnie z Ustawą o ochronie danych osobowych w związku z wysłaniem
             zapytania przez formularz kontaktowy. Podanie przez Ciebie danych

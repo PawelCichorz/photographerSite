@@ -5,10 +5,10 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
 import { EffectFade } from 'swiper/modules';
-import 'swiper/css/effect-fade'; // Załaduj styl dla efektu fade
-import 'swiper/css'; // Import ogólnych stylów Swiper
-import 'swiper/css/pagination'; // Import stylów dla paginacji
-import 'swiper/css/autoplay'; // Import stylów dla autoplay
+import 'swiper/css/effect-fade';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 import one from '../../../assets/imgMain/one.jpg';
 import two from '../../../assets/imgMain/two.jpg';
 import three from '../../../assets/imgMain/three.jpg';
@@ -71,7 +71,7 @@ const ImageCarousel: React.FC = () => {
           <SwiperSlide key={index}>
             <Image
               src={image.src}
-              alt={`Slide ${index + 1}`}
+              alt={`sesja fotograficzna ${index + 1}`}
               className="object-cover"
               fill
               sizes="100vw"

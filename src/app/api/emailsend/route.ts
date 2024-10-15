@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-// Funkcja walidująca dane z formularza
 function validateFormData(name: string, email: string, message: string) {
   if (!name || !email || !message) {
     return false;
@@ -11,19 +10,19 @@ function validateFormData(name: string, email: string, message: string) {
   return emailPattern.test(email);
 }
 
-// Funkcja walidująca anty-spamowo
-function validateAntiSpam(headers: Headers) {
-  const userAgent = headers.get('user-agent') || '';
-  const referer = headers.get('referer') || '';
+// function validateAntiSpam(headers: Headers) {
+//   const userAgent = headers.get('user-agent') || '';
+//   const referer = headers.get('referer') || '';
 
-  if (!userAgent || !referer.includes('your-domain.com')) {
-    return false;
-  }
+//   if (!userAgent || !referer.includes('your-domain.com')) {
+//     return false;
+//   }
 
-  return true;
-}
+//   return true;
+// }
 
 export async function POST(req: Request) {
+  console.log(process.env.EMAIL_PASS);
   try {
     const { name, email, message } = await req.json();
 
@@ -34,12 +33,12 @@ export async function POST(req: Request) {
       );
     }
 
-    if (!validateAntiSpam(req.headers)) {
-      return NextResponse.json(
-        { error: 'Zablokowano jako potencjalny spam' },
-        { status: 403 }
-      );
-    }
+    // if (!validateAntiSpam(req.headers)) {
+    //   return NextResponse.json(
+    //     { error: 'Zablokowano jako potencjalny spam' },
+    //     { status: 403 }
+    //   );
+    // }
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -50,10 +49,10 @@ export async function POST(req: Request) {
     });
 
     const mailOptions = {
-      from: email,
+      from: `${name} <${email}>`,
       to: 'cichorzklaudia@gmail.com',
-      subject: `Wiadomość od ${name}`,
-      text: message,
+      subject: 'Formularz Kontaktowy z Twojej strony',
+      text: `Imię: ${name}\nEmail: ${email}\nWiadomość: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);

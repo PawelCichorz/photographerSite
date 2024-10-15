@@ -41,18 +41,17 @@ const Reportage = () => {
         initial="hidden"
         animate="visible"
         variants={dropInVariants}
-        custom={0} // Pierwszy element, bez opóźnienia
+        custom={0}
       >
         PLENER/STUDIO CENNIK
       </motion.h1>
 
-      {/* Animowana lista "Sesje" */}
       <div className="text-center lg:mb-12 space-y-4 lg:text-2xl tetx-xl text-gray-700 flex items-center flex-col">
         {showText &&
           sessions.map((session, index) => (
             <motion.div
               key={session}
-              custom={index + 1} // Opóźnienie dla każdego napisu "Sesje"
+              custom={index + 1}
               initial="hidden"
               animate="visible"
               variants={dropInVariants}
@@ -63,17 +62,15 @@ const Reportage = () => {
           ))}
       </div>
 
-      {/* Sekcja z cennikiem */}
       <motion.div
         className="flex flex-col items-center md:flex-row md:justify-center md:space-x-8 mt-10"
         initial="hidden"
         animate="visible"
         variants={dropInVariants}
-        custom={sessions.length + 2} // Cennik pojawia się po napisach "Sesje"
+        custom={sessions.length + 2}
       >
-        {/* Tabelka Basic */}
         <motion.div
-          className="p-6 border border-gray-300 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform mb-6 md:mb-0 w-[330px] lg:w-[450px]"
+          className="p-6 border border-amber-800 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform mb-6 md:mb-0 w-[330px] lg:w-[450px]"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="lg:text-2xl font-bold lg:mb-4 text-xl text-center">
@@ -91,9 +88,8 @@ const Reportage = () => {
           </ul>
         </motion.div>
 
-        {/* Tabelka Standard */}
         <motion.div
-          className="p-6 border border-gray-300 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform w-[330px] lg:w-[450px]"
+          className="p-6 border border-amber-800 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform w-[330px] lg:w-[450px]"
           whileHover={{ scale: 1.05 }}
         >
           <h2 className="lg:text-2xl font-bold lg:mb-4 text-xl text-center">
@@ -112,13 +108,12 @@ const Reportage = () => {
         </motion.div>
       </motion.div>
 
-      {/* Animowana informacja o ofercie */}
       <motion.div
         className="mt-12 max-w-3xl mx-auto text-center text-sm text-gray-600 w-[300px] lg:w-[450px]"
         initial="hidden"
         animate="visible"
         variants={dropInVariants}
-        custom={sessions.length + 3} // Informacja pojawia się po tabelkach
+        custom={sessions.length + 3}
       >
         Niniejsza oferta nie stanowi oferty handlowej w rozumieniu KC i może
         ulec zmianie. Istnieje możliwość przygotowania indywidualnej oferty oraz

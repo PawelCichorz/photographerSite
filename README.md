@@ -18,6 +18,7 @@ A custom-built website for a photographer, created using **Next.js**. The projec
 - **React Type Animation** – For creating animated text effects.
 - **React Scroll** – To enable smooth scrolling and navigation between sections.
 - **React Icons** – A library for icons in React.
+- ** Taulwind **
 
 ## Installation
 

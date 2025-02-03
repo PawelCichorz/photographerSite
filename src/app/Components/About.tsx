@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import about from '../../../assets/about.jpg';
+import about from '../../../assets/newMain.png';
 
 const FadeInComponent: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const FadeInComponent: React.FC = () => {
       viewport={{ once: true }}
       className="my-10 flex justify-center items-center flex-col lg:flex-row white-bg-section"
     >
-      <Image src={about} alt="zdjęcie fotografa" width={420} priority />
+      <Image src={about} alt="zdjęcie fotografa" width={350} priority />
       <div className="text-black mb-4  w-[300px] sm:w-[472px]  lg:w-[500px] 2xl:w-[900px] font-poppins lg:ml-8  text-[17px] lg:text-[18px] text-center 2xl:text-[25px]">
         <span>
           Witaj, jestem fotografem i od zawsze fascynuje mnie możliwość

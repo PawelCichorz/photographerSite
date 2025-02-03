@@ -7,7 +7,7 @@ import d from '../../../assets/imgPorfolio/All/d.png';
 import dd from '../../../assets/imgPorfolio/All/dd.jpg';
 import ddd from '../../../assets/imgPorfolio/All/ddd.jpg';
 import dddd from '../../../assets/imgPorfolio/All/dddd.jpg';
-import e from '../../../assets/imgPorfolio/All/e.jpg';
+
 import ee from '../../../assets/imgPorfolio/All/ee.jpg';
 import eee from '../../../assets/imgPorfolio/All/eee.jpg';
 import eeee from '../../../assets/imgPorfolio/All/eeee.jpg';
@@ -23,6 +23,18 @@ import h from '../../../assets/imgPorfolio/All/h.jpg';
 import hh from '../../../assets/imgPorfolio/All/hh.jpg';
 import hhh from '../../../assets/imgPorfolio/All/hhh.jpg';
 import hhhh from '../../../assets/imgPorfolio/All/hhhh.png';
+import hhhhh from '../../../assets/imgPorfolio/All/hhhhh.png';
+import hhhhhh from '../../../assets/imgPorfolio/All/hhhhhh.png';
+import hhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhh.png';
+import hhhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhhh.png';
+import hhhhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhhhh.png';
+import hhhhhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhhhhh.png';
+import hhhhhhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhhhhhh.png';
+import hhhhhhhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhhhhhhh.png';
+import hhhhhhhhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhhhhhhh.png';
+import hhhhhhhhhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhhhhhhhh.png';
+import hhhhhhhhhhhhhhh from '../../../assets/imgPorfolio/All/hhhhhhhhhhhhhhhh.jpg';
+
 import j from '../../../assets/imgPorfolio/All/j.jpg';
 import jj from '../../../assets/imgPorfolio/All/jj.jpg';
 import jjj from '../../../assets/imgPorfolio/All/jjj.jpg';
@@ -45,6 +57,7 @@ import www from '../../../assets/imgPorfolio/All/www.jpg';
 import wwww from '../../../assets/imgPorfolio/All/wwww.jpg';
 import wwwww from '../../../assets/imgPorfolio/All/wwwww.jpg';
 import wwwwww from '../../../assets/imgPorfolio/All/wwwwww.jpg';
+import wwwwwww from '../../../assets/imgPorfolio/All/wwwwwww.jpg';
 import a from '../../../assets/imgPorfolio/All/a.jpg';
 import aa from '../../../assets/imgPorfolio/All/aa.jpg';
 import aaa from '../../../assets/imgPorfolio/All/aaa.jpg';
@@ -57,6 +70,19 @@ import c from '../../../assets/imgPorfolio/All/c.jpg';
 import cc from '../../../assets/imgPorfolio/All/cc.jpg';
 import ccc from '../../../assets/imgPorfolio/All/ccc.jpg';
 import cccc from '../../../assets/imgPorfolio/All/cccc.jpg';
+import q from '../../../assets/imgPorfolio/All/q.jpg';
+import qq from '../../../assets/imgPorfolio/All/qq.jpg';
+import qqq from '../../../assets/imgPorfolio/All/qqq.jpg';
+import qqqq from '../../../assets/imgPorfolio/All/qqqq.jpg';
+import qqqqq from '../../../assets/imgPorfolio/All/qqqqq.jpg';
+import qqqqqq from '../../../assets/imgPorfolio/All/qqqqqq.jpg';
+import qqqqqqq from '../../../assets/imgPorfolio/All/qqqqqqq.jpg';
+import qqqqqqqq from '../../../assets/imgPorfolio/All/qqqqqqqq.jpg';
+import qqqqqqqqq from '../../../assets/imgPorfolio/All/qqqqqqqqq.jpg';
+import qqqqqqqqqq from '../../../assets/imgPorfolio/All/qqqqqqqqqq.jpg';
+import qqqqqqqqqqq from '../../../assets/imgPorfolio/All/qqqqqqqqqqq.jpg';
+import qqqqqqqqqqqq from '../../../assets/imgPorfolio/All/qqqqqqqqqqqq.png';
+import qqqqqqqqqqqqq from '../../../assets/imgPorfolio/All/qqqqqqqqqqqqq.jpg';
 
 const Portfolio = () => {
   return (
@@ -290,14 +316,7 @@ const Portfolio = () => {
             placeholder="blur"
             className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
-          <Image
-            src={e}
-            alt="chłpiec lepi ciasto"
-            width={300}
-            layout="intrinsic"
-            placeholder="blur"
-            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-          />
+
           <Image
             src={ee}
             alt="mama z córką"
@@ -450,6 +469,14 @@ const Portfolio = () => {
             className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
           <Image
+            src={q}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
             src={w}
             alt="napis rodzina"
             width={330}
@@ -467,6 +494,14 @@ const Portfolio = () => {
           <Image
             src={www}
             alt="dziewczna nad jeziorem"
+            width={330}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={wwwwwww}
+            alt="zdjęcie domu"
             width={330}
             layout="intrinsic"
             placeholder="blur"
@@ -492,6 +527,191 @@ const Portfolio = () => {
             src={wwwwww}
             alt="niemowlak"
             width={330}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+
+          <Image
+            src={qq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqqqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqqqqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqqqqqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqqqqqqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={qqqqqqqqqqqqq}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhhhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhhhhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhhhhhhhhh}
+            alt="niemowlak"
+            width={300}
+            layout="intrinsic"
+            placeholder="blur"
+            className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+          />
+          <Image
+            src={hhhhhhhhhhhhhhh}
+            alt="niemowlak"
+            width={300}
             layout="intrinsic"
             placeholder="blur"
             className="lg:m-[6px] mx-[6px] my-[8px] rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
